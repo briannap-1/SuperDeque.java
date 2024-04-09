@@ -84,28 +84,4 @@ public class QueueStackProblems {
         }
         return reverseDeque;
     }
-
-    /** A method that "plays" a certain number of rounds until a winner is determined
-     * @param n the number of players
-     * @param offset the index to remove
-     * @return the id of the winning player
-     * */
-    public static int playGame(int n, int offset) {
-        SuperDeque<Integer> first = new SuperDeque<>();
-        int countRemoved = 0;
-        int index = 0;
-        if (n <= 0)
-            return -1;
-        for (int i = 0; i < n; i++) { //creates the deque with n elements
-            first.enqueue(i + 1);
-        }
-        while (countRemoved < n -1) {
-            if (index % offset == 0) { //if 
-
-            }
-            index++;
-        }
-
-        return winner;
-    }
 }
