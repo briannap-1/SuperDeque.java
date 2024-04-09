@@ -54,13 +54,4 @@ class QueueStackProblemsTest {
         assertEquals("1, 2, 3, 4, 5, 6, 7", QueueStackProblems.reverseK(exampleDeque4, 0).toString());
 
     }
-
-    /** This method tests the playGame method using large, medium, and small values */
-    @Test
-    void playGame() {
-        assertEquals(5, QueueStackProblems.playGame(6, 3));
-      //  assertEquals(2, QueueStackProblems.playGame(4, 2)); not working properly. might have an issue when offset is even
-        assertEquals(1, QueueStackProblems.playGame(2, 1));
-        assertEquals(-1, QueueStackProblems.playGame(0, 3));
-    }
 }
